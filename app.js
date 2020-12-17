@@ -4,6 +4,7 @@ let map = L.map("map", {
   maxZoom: 5,
   minZoom: 5,
   dragging: false,
+  doubleClickZoom: false,
 }).setView([37.8, -96], 5);
 
 L.tileLayer(
@@ -15,9 +16,53 @@ L.tileLayer(
     zoomOffset: -1,
   }
 ).addTo(map);
-L.geoJson().addTo(map);
-console.log(statesData.features[0].properties.name);
+L.geoJson(statesData).addTo(map);
+//////////////////////////////////////////////////////////////
 
-//TODO
-//1. make map clickable
-//2. change color of the selected state
+//////////////////////////////////////////////////////////////
+const states = Array.from(document.getElementsByTagName("path"));
+const originalStates = {
+  statesPath: states,
+  statesElectoral: [],
+  statesNames: [],
+  electoralVotes: {},
+};
+
+//electoral votes for every country
+for (let i = 0; i < statesData.features.length - 1; i++) {
+  const element = statesData.features[i];
+  originalStates.statesElectoral.push(element.properties.electoralVotes);
+  //my key = country
+  //my value = electoral votes
+  originalStates.electoralVotes[element.properties.name] =
+    element.properties.electoralVotes;
+}
+
+for (let i = 0; i < statesData.features.length - 1; i++) {
+  const element = statesData.features[i];
+  originalStates.statesNames.push(element.properties.name);
+}
+
+//vsakemu pathu dodati svojo kurčevo državo
+
+const USA = {};
+for (let i = 0; i < states.length; i++) {
+  const element = states[i];
+  element.setAttribute("id", originalStates.statesNames[i]);
+  element.setAttribute("fill", "transparent");
+  element.setAttribute("data-votes", originalStates.statesElectoral[i]);
+}
+let clicked = 0;
+
+states.forEach((el) => {
+  el.addEventListener("click", function (e) {
+    if (e.target.getAttribute("fill") === "#3388ff") {
+      e.target.setAttribute("fill", "#ff0000");
+    } else {
+      e.target.setAttribute("fill", "#3388ff");
+    }
+    console.log(e.target.dataset.votes);
+  });
+});
+
+console.log(originalStates);

@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Langar", cursive;
+  font-family: "Roboto Mono", monospace;
   color: black;
   font-weight: 600;
 }
@@ -21,7 +21,59 @@ body {
   height: 900px;
 
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+g {
+  opacity: 1;
+}
+
+.country {
+  fill: transparent;
+}
+.country-blue {
+  fill: #3388ff;
+}
+.country-red {
+  fill: #ff0000;
+}
+.leaflet-interactive:hover {
+  fill: yellowgreen;
+}
+.leaflet-interactive:hover::after {
+  content: "";
+
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: teal;
+  z-index: 1000000;
+}
+
+.presCandi {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.presPict {
+  height: 150px;
+  width: 150px;
+  border-radius: 2000000px;
+}
+
+.nameHeader {
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+}
+.electoralPoints {
+  font-size: 3rem;
+  position: relative;
+  left: 4.5rem;
 }
