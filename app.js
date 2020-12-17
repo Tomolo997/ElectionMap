@@ -21,13 +21,17 @@ L.geoJson(statesData).addTo(map);
 
 //////////////////////////////////////////////////////////////
 const states = Array.from(document.getElementsByTagName("path"));
+const trumpProg = document.querySelector(".progressBar--trump");
+const bidenProg = document.querySelector(".progressBar--biden");
 const originalStates = {
   statesPath: states,
   statesElectoral: [],
   statesNames: [],
   electoralVotes: {},
+  trumpCountriesWon: {},
+  bidenCountriesWon: {},
 };
-
+//adding the classes and ids and so on
 //electoral votes for every country
 for (let i = 0; i < statesData.features.length - 1; i++) {
   const element = statesData.features[i];
@@ -53,16 +57,21 @@ for (let i = 0; i < states.length; i++) {
   element.setAttribute("data-votes", originalStates.statesElectoral[i]);
 }
 let clicked = 0;
-
+//adding the classes and ids and so on
+//
+//
+//
+//clicked events
 states.forEach((el) => {
   el.addEventListener("click", function (e) {
     if (e.target.getAttribute("fill") === "#3388ff") {
       e.target.setAttribute("fill", "#ff0000");
+      originalStates.trumpCountriesWon[e.target.id] =
+        e.target.dataset.electoralVotes;
     } else {
       e.target.setAttribute("fill", "#3388ff");
     }
-    console.log(e.target.dataset.votes);
+    console.log(originalStates.bidenCountriesWon);
+    console.log(originalStates.trumpCountriesWon);
   });
 });
-
-console.log(originalStates);
