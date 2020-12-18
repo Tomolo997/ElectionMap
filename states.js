@@ -3002,7 +3002,7 @@ var statesData = {
     {
       type: "Feature",
       id: "32",
-      properties: { name: "Nevada", electoralVotes: 24.8 },
+      properties: { name: "Nevada", electoralVotes: 6 },
       geometry: {
         type: "Polygon",
         coordinates: [

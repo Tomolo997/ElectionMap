@@ -28,9 +28,10 @@ const originalStates = {
   statesElectoral: [],
   statesNames: [],
   electoralVotes: {},
-  trumpCountriesWon: {},
-  bidenCountriesWon: {},
+  trumpCountriesWon: [],
+  bidenCountriesWon: [],
 };
+
 //adding the classes and ids and so on
 //electoral votes for every country
 for (let i = 0; i < statesData.features.length - 1; i++) {
@@ -49,7 +50,6 @@ for (let i = 0; i < statesData.features.length - 1; i++) {
 
 //vsakemu pathu dodati svojo kurčevo državo
 
-const USA = {};
 for (let i = 0; i < states.length; i++) {
   const element = states[i];
   element.setAttribute("id", originalStates.statesNames[i]);
@@ -57,6 +57,8 @@ for (let i = 0; i < states.length; i++) {
   element.setAttribute("data-votes", originalStates.statesElectoral[i]);
 }
 let clicked = 0;
+let trumpVotes = 0;
+let bidenVotes = 0;
 //adding the classes and ids and so on
 //
 //
@@ -66,12 +68,71 @@ states.forEach((el) => {
   el.addEventListener("click", function (e) {
     if (e.target.getAttribute("fill") === "#3388ff") {
       e.target.setAttribute("fill", "#ff0000");
-      originalStates.trumpCountriesWon[e.target.id] =
-        e.target.dataset.electoralVotes;
+      //add to the countries won
     } else {
       e.target.setAttribute("fill", "#3388ff");
+      //add to the biden victory
     }
-    console.log(originalStates.bidenCountriesWon);
-    console.log(originalStates.trumpCountriesWon);
+    // id = ime
+    // dataset.electoral => electoral votes of the state
+    //če ima fill enak moder, dodaj k bidenu
+    if (e.target.getAttribute("fill") === "#3388ff") {
+      e.target.setAttribute("data-candidate", "biden");
+      //vse države soe.target.id že podane k obema kandidatoma
+    }
+    if (e.target.getAttribute("fill") === "#ff0000") {
+      console.log("Trumps Country ");
+      e.target.setAttribute("data-candidate", "trump");
+    }
+    const country = {
+      coutnryName: e.target.id,
+      countryVotes: e.target.dataset.votes,
+    };
+    const indexBiden = originalStates.bidenCountriesWon.findIndex(
+      (count) => count.coutnryName === `${e.target.id}`
+    );
+    const indexTrump = originalStates.trumpCountriesWon.findIndex(
+      (count) => count.coutnryName === `${e.target.id}`
+    );
+    //added the dataset to the country for which it voted for
+    if (e.target.getAttribute("data-candidate") === "trump") {
+      originalStates.trumpCountriesWon.push(country);
+
+      originalStates.bidenCountriesWon.splice(indexBiden, 1);
+    }
+
+    //najdi vse ki imajo dataset enak trump in seštej
+
+    if (e.target.getAttribute("data-candidate") === "biden") {
+      originalStates.bidenCountriesWon.push(country);
+      originalStates.trumpCountriesWon.splice(indexTrump, 1);
+    }
+
+    //states => vsaka ki
+    //izračunaj vse kar je imenovano trump
+
+    console.log("trump countries ", originalStates.trumpCountriesWon);
+    console.log("biden countries ", originalStates.bidenCountriesWon);
+    const bidenVOOtes = [];
+    const trumpVOotes = [];
+    for (let i = 0; i < originalStates.bidenCountriesWon.length; i++) {
+      const element = originalStates.bidenCountriesWon[i];
+      bidenVOOtes.push(+element.countryVotes);
+    }
+    for (let i = 0; i < originalStates.trumpCountriesWon.length; i++) {
+      const element = originalStates.trumpCountriesWon[i];
+      trumpVOotes.push(+element.countryVotes);
+    }
   });
 });
+console.log(originalStates);
+
+// reducing the array to one value
+
+//todo
+//1.)figure out progress bar logic
+//
+//ideas : every election result, with colored countries
+
+//ideas for progress bar logic
+//when i click on the country => it should be added presidents array that he won and taken off the presidents array that it won, the country can only be red or blue( true or false ? )
