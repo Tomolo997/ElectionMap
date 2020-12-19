@@ -23,6 +23,8 @@ L.geoJson(statesData).addTo(map);
 const states = Array.from(document.getElementsByTagName("path"));
 const trumpProg = document.querySelector(".progressBar--trump");
 const bidenProg = document.querySelector(".progressBar--biden");
+const trumpOnScreenVotes = document.querySelector(".electoralPoints-Trump");
+const bidenOnScreenVotes = document.querySelector(".electoralPoints-Biden");
 const originalStates = {
   statesPath: states,
   statesElectoral: [],
@@ -124,10 +126,10 @@ states.forEach((el) => {
       const element = originalStates.trumpCountriesWon[i];
       trumpVOotes.push(+element.countryVotes);
     }
-*/
+  */
     //get all the paths = >
-    const bidenVOOtes = [0];
-    const trumpVOotes = [0];
+    const bidenVOOtes = [4];
+    const trumpVOotes = [3];
     for (let i = 0; i < states.length; i++) {
       const element = states[i];
       if (element.dataset.candidate === "biden") {
@@ -142,6 +144,15 @@ states.forEach((el) => {
     console.log("trump Votes " + trumpVotesFinal);
     let bidenVotesFinal = bidenVOOtes.reduce((acc, cur) => acc + cur);
     console.log("biden Votes " + bidenVotesFinal);
+
+    // width => je enako votson trumpProg bidenProg
+    //novi width je tist , kateri je trenuten votes
+
+    trumpProg.style.width = trumpVotesFinal * 1.86 + "px";
+    bidenProg.style.width = bidenVotesFinal * 1.86 + "px";
+
+    trumpOnScreenVotes.textContent = trumpVotesFinal;
+    bidenOnScreenVotes.textContent = bidenVotesFinal;
   });
 });
 console.log(originalStates);
