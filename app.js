@@ -94,6 +94,7 @@ states.forEach((el) => {
     const indexTrump = originalStates.trumpCountriesWon.findIndex(
       (count) => count.coutnryName === `${e.target.id}`
     );
+    /*
     //added the dataset to the country for which it voted for
     if (e.target.getAttribute("data-candidate") === "trump") {
       originalStates.trumpCountriesWon.push(country);
@@ -123,6 +124,24 @@ states.forEach((el) => {
       const element = originalStates.trumpCountriesWon[i];
       trumpVOotes.push(+element.countryVotes);
     }
+*/
+    //get all the paths = >
+    const bidenVOOtes = [0];
+    const trumpVOotes = [0];
+    for (let i = 0; i < states.length; i++) {
+      const element = states[i];
+      if (element.dataset.candidate === "biden") {
+        bidenVOOtes.push(+element.dataset.votes);
+      } else if (element.dataset.candidate === "trump") {
+        trumpVOotes.push(+element.dataset.votes);
+      }
+    }
+    console.log(bidenVOOtes);
+    console.log(trumpVOotes);
+    let trumpVotesFinal = trumpVOotes.reduce((acc, cur) => acc + cur);
+    console.log("trump Votes " + trumpVotesFinal);
+    let bidenVotesFinal = bidenVOOtes.reduce((acc, cur) => acc + cur);
+    console.log("biden Votes " + bidenVotesFinal);
   });
 });
 console.log(originalStates);
