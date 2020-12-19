@@ -25,6 +25,24 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.mapOfAlaska {
+  width: 300px;
+  height: 300px;
+
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+.mapOfHawai {
+  width: 300px;
+  height: 300px;
+
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
 g {
   opacity: 1;
 }
