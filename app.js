@@ -3,7 +3,7 @@ let mapboxAccessToken =
 let map = L.map("map", {
   maxZoom: 5,
   minZoom: 5,
-  dragging: true,
+  dragging: false,
   doubleClickZoom: false,
 }).setView([37.8, -96], 5);
 
@@ -60,6 +60,14 @@ const statesAlaska = Array.from(mapOfAlaska.getElementsByTagName("path"));
 
 const mapOfHawai = document.querySelector(".mapOfHawai");
 const statesHawai = Array.from(mapOfHawai.getElementsByTagName("path"));
+
+let controls = document.querySelectorAll(".leaflet-top");
+for (let i = 0; i < controls.length; i++) {
+  const element = controls[i];
+  element.remove();
+}
+
+console.log(controls);
 
 states.splice(1, 1, statesAlaska[1]);
 states.splice(11, 1, statesHawai[11]);
@@ -131,48 +139,7 @@ states.forEach((el) => {
       console.log("Trumps Country ");
       e.target.setAttribute("data-candidate", "trump");
     }
-    /*
-    const country = {
-      coutnryName: e.target.id,
-      countryVotes: e.target.dataset.votes,
-    };
-    const indexBiden = originalStates.bidenCountriesWon.findIndex(
-      (count) => country.coutnryName === `${e.target.id}`
-    );
-    const indexTrump = originalStates.trumpCountriesWon.findIndex(
-      (count) => country.coutnryName === `${e.target.id}`
-    );
-    /*
-    //added the dataset to the country for which it voted for
-    if (e.target.getAttribute("data-candidate") === "trump") {
-      originalStates.trumpCountriesWon.push(country);
 
-      originalStates.bidenCountriesWon.splice(indexBiden, 1);
-    }
-
-    //najdi vse ki imajo dataset enak trump in seštej
-
-    if (e.target.getAttribute("data-candidate") === "biden") {
-      originalStates.bidenCountriesWon.push(country);
-      originalStates.trumpCountriesWon.splice(indexTrump, 1);
-    }
-
-    //states => vsaka ki
-    //izračunaj vse kar je imenovano trump
-
-    console.log("trump countries ", originalStates.trumpCountriesWon);
-    console.log("biden countries ", originalStates.bidenCountriesWon);
-    const bidenVOOtes = [];
-    const trumpVOotes = [];
-    for (let i = 0; i < originalStates.bidenCountriesWon.length; i++) {
-      const element = originalStates.bidenCountriesWon[i];
-      bidenVOOtes.push(+element.countryVotes);
-    }
-    for (let i = 0; i < originalStates.trumpCountriesWon.length; i++) {
-      const element = originalStates.trumpCountriesWon[i];
-      trumpVOotes.push(+element.countryVotes);
-    }
-  */
     //get all the paths = >
     const bidenVOOtes = [0];
     const trumpVOotes = [0];
@@ -202,12 +169,4 @@ states.forEach((el) => {
   });
 });
 
-// reducing the array to one value
-
-//todo
-//1.)figure out progress bar logic
-//
-//ideas : every election result, with colored countries
-
-//ideas for progress bar logic
-//when i click on the country => it should be added presidents array that he won and taken off the presidents array that it won, the country can only be red or blue( true or false ? )
+//To do :
