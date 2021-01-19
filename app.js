@@ -1,8 +1,8 @@
 let mapboxAccessToken =
   'pk.eyJ1IjoidG9tYXpvdnNlbmphayIsImEiOiJja2lxYTRhd28wZGoxMnhwamF3MTI1YjA5In0.cCRWR0uclCv1ecYzmJ0Y_w';
 let map = L.map('map', {
-  maxZoom: 5,
-  minZoom: 5,
+  maxZoom: 4.5,
+  minZoom: 4.5,
   dragging: false,
   doubleClickZoom: false,
 }).setView([37.8, -96], 5);

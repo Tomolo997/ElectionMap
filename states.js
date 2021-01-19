@@ -1,12 +1,12 @@
-var statesData = {
-  type: "FeatureCollection",
+statesData = {
+  type: 'FeatureCollection',
   features: [
     {
-      type: "Feature",
-      id: "01",
-      properties: { name: "Alabama", electoralVotes: 9 },
+      type: 'Feature',
+      id: '01',
+      properties: { name: 'Alabama', electoralVotes: 9 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-87.359296, 35.00118],
@@ -47,11 +47,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "02",
-      properties: { name: "Alaska", electoralVotes: 3 },
+      type: 'Feature',
+      id: '02',
+      properties: { name: 'Alaska', electoralVotes: 3 },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -1287,11 +1287,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "04",
-      properties: { name: "Arizona", electoralVotes: 11 },
+      type: 'Feature',
+      id: '04',
+      properties: { name: 'Arizona', electoralVotes: 11 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-109.042503, 37.000263],
@@ -1331,11 +1331,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "05",
-      properties: { name: "Arkansas", electoralVotes: 6 },
+      type: 'Feature',
+      id: '05',
+      properties: { name: 'Arkansas', electoralVotes: 6 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-94.473842, 36.501861],
@@ -1380,11 +1380,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "06",
-      properties: { name: "California", electoralVotes: 55 },
+      type: 'Feature',
+      id: '06',
+      properties: { name: 'California', electoralVotes: 55 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-123.233256, 42.006186],
@@ -1485,11 +1485,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "08",
-      properties: { name: "Colorado", electoralVotes: 9 },
+      type: 'Feature',
+      id: '08',
+      properties: { name: 'Colorado', electoralVotes: 9 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-107.919731, 41.003906],
@@ -1513,11 +1513,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "09",
-      properties: { name: "Connecticut", electoralVotes: 7 },
+      type: 'Feature',
+      id: '09',
+      properties: { name: 'Connecticut', electoralVotes: 7 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-73.053528, 42.039048],
@@ -1541,11 +1541,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "10",
-      properties: { name: "Delaware", electoralVotes: 3 },
+      type: 'Feature',
+      id: '10',
+      properties: { name: 'Delaware', electoralVotes: 3 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-75.414089, 39.804456],
@@ -1566,11 +1566,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "11",
-      properties: { name: "District of Columbia", electoralVotes: 3 },
+      type: 'Feature',
+      id: '11',
+      properties: { name: 'District of Columbia', electoralVotes: 3 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-77.035264, 38.993869],
@@ -1583,11 +1583,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "12",
-      properties: { name: "Florida", electoralVotes: 29 },
+      type: 'Feature',
+      id: '12',
+      properties: { name: 'Florida', electoralVotes: 29 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-85.497137, 30.997536],
@@ -1673,11 +1673,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "13",
-      properties: { name: "Georgia", electoralVotes: 16 },
+      type: 'Feature',
+      id: '13',
+      properties: { name: 'Georgia', electoralVotes: 16 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-83.109191, 35.00118],
@@ -1736,11 +1736,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "15",
-      properties: { name: "Hawaii", electoralVotes: 4 },
+      type: 'Feature',
+      id: '15',
+      properties: { name: 'Hawaii', electoralVotes: 4 },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -1815,11 +1815,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "16",
-      properties: { name: "Idaho", electoralVotes: 4 },
+      type: 'Feature',
+      id: '16',
+      properties: { name: 'Idaho', electoralVotes: 4 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-116.04751, 49.000239],
@@ -1893,11 +1893,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "17",
-      properties: { name: "Illinois", electoralVotes: 20 },
+      type: 'Feature',
+      id: '17',
+      properties: { name: 'Illinois', electoralVotes: 20 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-90.639984, 42.510065],
@@ -1972,11 +1972,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "18",
-      properties: { name: "Indiana", electoralVotes: 11 },
+      type: 'Feature',
+      id: '18',
+      properties: { name: 'Indiana', electoralVotes: 11 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-85.990061, 41.759724],
@@ -2030,11 +2030,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "19",
-      properties: { name: "Iowa", electoralVotes: 6 },
+      type: 'Feature',
+      id: '19',
+      properties: { name: 'Iowa', electoralVotes: 6 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-91.368417, 43.501391],
@@ -2092,11 +2092,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "20",
-      properties: { name: "Kansas", electoralVotes: 6 },
+      type: 'Feature',
+      id: '20',
+      properties: { name: 'Kansas', electoralVotes: 6 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-101.90605, 40.001626],
@@ -2117,11 +2117,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "21",
-      properties: { name: "Kentucky", electoralVotes: 8 },
+      type: 'Feature',
+      id: '21',
+      properties: { name: 'Kentucky', electoralVotes: 8 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-83.903347, 38.769315],
@@ -2204,11 +2204,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "22",
-      properties: { name: "Louisiana", electoralVotes: 8 },
+      type: 'Feature',
+      id: '22',
+      properties: { name: 'Louisiana', electoralVotes: 8 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-93.608485, 33.018527],
@@ -2292,11 +2292,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "23",
-      properties: { name: "Maine", electoralVotes: 4 },
+      type: 'Feature',
+      id: '23',
+      properties: { name: 'Maine', electoralVotes: 4 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-70.703921, 43.057759],
@@ -2370,11 +2370,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "24",
-      properties: { name: "Maryland", electoralVotes: 10 },
+      type: 'Feature',
+      id: '24',
+      properties: { name: 'Maryland', electoralVotes: 10 },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -2452,11 +2452,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "25",
-      properties: { name: "Massachusetts", electoralVotes: 11 },
+      type: 'Feature',
+      id: '25',
+      properties: { name: 'Massachusetts', electoralVotes: 11 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-70.917521, 42.887974],
@@ -2499,11 +2499,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "26",
-      properties: { name: "Michigan", electoralVotes: 16 },
+      type: 'Feature',
+      id: '26',
+      properties: { name: 'Michigan', electoralVotes: 16 },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -2677,11 +2677,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "27",
-      properties: { name: "Minnesota", electoralVotes: 10 },
+      type: 'Feature',
+      id: '27',
+      properties: { name: 'Minnesota', electoralVotes: 10 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-92.014696, 46.705401],
@@ -2772,11 +2772,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "28",
-      properties: { name: "Mississippi", electoralVotes: 6 },
+      type: 'Feature',
+      id: '28',
+      properties: { name: 'Mississippi', electoralVotes: 6 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-88.471115, 34.995703],
@@ -2830,11 +2830,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "29",
-      properties: { name: "Missouri", electoralVotes: 10 },
+      type: 'Feature',
+      id: '29',
+      properties: { name: 'Missouri', electoralVotes: 10 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-91.833957, 40.609566],
@@ -2895,11 +2895,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "30",
-      properties: { name: "Montana", electoralVotes: 3 },
+      type: 'Feature',
+      id: '30',
+      properties: { name: 'Montana', electoralVotes: 3 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-104.047534, 49.000239],
@@ -2959,11 +2959,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "31",
-      properties: { name: "Nebraska", electoralVotes: 5 },
+      type: 'Feature',
+      id: '31',
+      properties: { name: 'Nebraska', electoralVotes: 5 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-103.324578, 43.002989],
@@ -3000,11 +3000,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "32",
-      properties: { name: "Nevada", electoralVotes: 6 },
+      type: 'Feature',
+      id: '32',
+      properties: { name: 'Nevada', electoralVotes: 6 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-117.027882, 42.000709],
@@ -3033,11 +3033,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "33",
-      properties: { name: "New Hampshire", electoralVotes: 4 },
+      type: 'Feature',
+      id: '33',
+      properties: { name: 'New Hampshire', electoralVotes: 4 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-71.08183, 45.303304],
@@ -3073,11 +3073,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "34",
-      properties: { name: "New Jersey", electoralVotes: 14 },
+      type: 'Feature',
+      id: '34',
+      properties: { name: 'New Jersey', electoralVotes: 14 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-74.236547, 41.14083],
@@ -3117,11 +3117,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "35",
-      properties: { name: "New Mexico", electoralVotes: 5 },
+      type: 'Feature',
+      id: '35',
+      properties: { name: 'New Mexico', electoralVotes: 5 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-107.421329, 37.000263],
@@ -3146,11 +3146,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "36",
-      properties: { name: "New York", electoralVotes: 29 },
+      type: 'Feature',
+      id: '36',
+      properties: { name: 'New York', electoralVotes: 29 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-73.343806, 45.013027],
@@ -3226,11 +3226,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "37",
-      properties: { name: "North Carolina", electoralVotes: 15 },
+      type: 'Feature',
+      id: '37',
+      properties: { name: 'North Carolina', electoralVotes: 15 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-80.978661, 36.562108],
@@ -3299,11 +3299,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "38",
-      properties: { name: "North Dakota", electoralVotes: 3 },
+      type: 'Feature',
+      id: '38',
+      properties: { name: 'North Dakota', electoralVotes: 3 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-97.228743, 49.000239],
@@ -3327,11 +3327,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "39",
-      properties: { name: "Ohio", electoralVotes: 18 },
+      type: 'Feature',
+      id: '39',
+      properties: { name: 'Ohio', electoralVotes: 18 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-80.518598, 41.978802],
@@ -3386,11 +3386,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "40",
-      properties: { name: "Oklahoma", electoralVotes: 7 },
+      type: 'Feature',
+      id: '40',
+      properties: { name: 'Oklahoma', electoralVotes: 7 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-100.087706, 37.000263],
@@ -3443,11 +3443,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "41",
-      properties: { name: "Oregon", electoralVotes: 7 },
+      type: 'Feature',
+      id: '41',
+      properties: { name: 'Oregon', electoralVotes: 7 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-123.211348, 46.174138],
@@ -3511,11 +3511,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "42",
-      properties: { name: "Pennsylvania", electoralVotes: 20 },
+      type: 'Feature',
+      id: '42',
+      properties: { name: 'Pennsylvania', electoralVotes: 20 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-79.76278, 42.252649],
@@ -3556,11 +3556,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "44",
-      properties: { name: "Rhode Island", electoralVotes: 4 },
+      type: 'Feature',
+      id: '44',
+      properties: { name: 'Rhode Island', electoralVotes: 4 },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -3589,11 +3589,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "45",
-      properties: { name: "South Carolina", electoralVotes: 9 },
+      type: 'Feature',
+      id: '45',
+      properties: { name: 'South Carolina', electoralVotes: 9 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-82.764143, 35.066903],
@@ -3645,11 +3645,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "46",
-      properties: { name: "South Dakota", electoralVotes: 3 },
+      type: 'Feature',
+      id: '46',
+      properties: { name: 'South Dakota', electoralVotes: 3 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-104.047534, 45.944106],
@@ -3686,11 +3686,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "47",
-      properties: { name: "Tennessee", electoralVotes: 11 },
+      type: 'Feature',
+      id: '47',
+      properties: { name: 'Tennessee', electoralVotes: 11 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-88.054868, 36.496384],
@@ -3741,11 +3741,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "48",
-      properties: { name: "Texas", electoralVotes: 38 },
+      type: 'Feature',
+      id: '48',
+      properties: { name: 'Texas', electoralVotes: 38 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-101.812942, 36.501861],
@@ -3905,11 +3905,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "49",
-      properties: { name: "Utah", electoralVotes: 6 },
+      type: 'Feature',
+      id: '49',
+      properties: { name: 'Utah', electoralVotes: 6 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-112.164359, 41.995232],
@@ -3929,11 +3929,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "50",
-      properties: { name: "Vermont", electoralVotes: 3 },
+      type: 'Feature',
+      id: '50',
+      properties: { name: 'Vermont', electoralVotes: 3 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-71.503554, 45.013027],
@@ -3969,11 +3969,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "51",
-      properties: { name: "Virginia", electoralVotes: 13 },
+      type: 'Feature',
+      id: '51',
+      properties: { name: 'Virginia', electoralVotes: 13 },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -4071,11 +4071,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "53",
-      properties: { name: "Washington", electoralVotes: 12 },
+      type: 'Feature',
+      id: '53',
+      properties: { name: 'Washington', electoralVotes: 12 },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
@@ -4165,11 +4165,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "54",
-      properties: { name: "West Virginia", electoralVotes: 5 },
+      type: 'Feature',
+      id: '54',
+      properties: { name: 'West Virginia', electoralVotes: 5 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-80.518598, 40.636951],
@@ -4242,11 +4242,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "55",
-      properties: { name: "Wisconsin", electoralVotes: 10 },
+      type: 'Feature',
+      id: '55',
+      properties: { name: 'Wisconsin', electoralVotes: 10 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-90.415429, 46.568478],
@@ -4329,11 +4329,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "56",
-      properties: { name: "Wyoming", electoralVotes: 3 },
+      type: 'Feature',
+      id: '56',
+      properties: { name: 'Wyoming', electoralVotes: 3 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-109.080842, 45.002073],
@@ -4354,11 +4354,11 @@ var statesData = {
       },
     },
     {
-      type: "Feature",
-      id: "72",
-      properties: { name: "Puerto Rico", electoralVotes: 1082 },
+      type: 'Feature',
+      id: '72',
+      properties: { name: 'Puerto Rico', electoralVotes: 1082 },
       geometry: {
-        type: "Polygon",
+        type: 'Polygon',
         coordinates: [
           [
             [-66.448338, 17.984326],

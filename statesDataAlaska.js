@@ -1,12 +1,12 @@
-var statesDataArizona = {
-  type: "FeatureCollection",
+statesDataArizona = {
+  type: 'FeatureCollection',
   features: [
     {
-      type: "Feature",
-      id: "02",
-      properties: { name: "Alaska", electoralVotes: 3 },
+      type: 'Feature',
+      id: '02',
+      properties: { name: 'Alaska', electoralVotes: 3 },
       geometry: {
-        type: "MultiPolygon",
+        type: 'MultiPolygon',
         coordinates: [
           [
             [
