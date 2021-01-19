@@ -161,5 +161,18 @@ g {
   font-size: 3rem;
 }
 
+.gitHub {
+  position: absolute;
+  top: 53rem;
+  right: 5rem;
+}
+.About {
+  position: absolute;
+  top: 20rem;
+  right: 5rem;
+  width: 20rem;
+  font-size: 1.4rem;
+}
+
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
