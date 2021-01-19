@@ -1,0 +1,24 @@
+{
+  "name": "02_electionMap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomolo997/ElectionMap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomolo997/ElectionMap/issues"
+  },
+  "homepage": "https://github.com/Tomolo997/ElectionMap#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}

@@ -12,17 +12,17 @@ html {
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   color: black;
   font-weight: 600;
 }
 .mapOfUSA {
-  width: 1500px;
-  height: 900px;
+  width: 1400px;
+  height: 750px;
 
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
 }
 .mapOfAlaska {
@@ -30,7 +30,7 @@ body {
   height: 300px;
 
   position: absolute;
-  top: 55%;
+  top: 42%;
   left: 10%;
   transform: translate(-50%, -50%);
 }
@@ -39,7 +39,7 @@ body {
   height: 300px;
 
   position: absolute;
-  top: 85%;
+  top: 70%;
   left: 10%;
   transform: translate(-50%, -50%);
 }
@@ -60,7 +60,7 @@ g {
   fill: yellowgreen;
 }
 .leaflet-interactive:hover::after {
-  content: "";
+  content: '';
 
   width: 20px;
   height: 20px;
@@ -75,7 +75,7 @@ g {
   align-items: center;
   width: 100%;
   justify-content: space-around;
-  top: 10%;
+  top: 11%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -113,10 +113,10 @@ g {
 .nameHeader {
   position: relative;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .electoralPoints {
-  font-size: 3rem;
+  font-size: 2rem;
   position: relative;
 }
 .progresBar--main {
@@ -151,4 +151,12 @@ g {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.titleOfTheWebApp {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 3%;
+  left: 50%;
+  font-size: 3rem;
 }
